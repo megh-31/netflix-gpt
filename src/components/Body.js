@@ -4,8 +4,9 @@ import Login from "./Login";
 import { RouterProvider } from "react-router-dom";        //It is required for routing
 
 const Body = () =>{
-            //setting up the routing
-    const appRouter = createBrowserRouter([   
+   
+    
+    const appRouter = createBrowserRouter([   //setting up the routing
         {
             path: "/",
             element: <Login />
@@ -25,3 +26,5 @@ const Body = () =>{
 }
 
 export default Body;
+
+//cant use navigate outside of router provider, so it will work inside Login or inside browse or children of browse
